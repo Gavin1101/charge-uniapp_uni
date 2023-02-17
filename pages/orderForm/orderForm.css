@@ -1,0 +1,18 @@
+.select {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    font-weight: 100;
+    margin-left: 14px;
+    height: 44px;
+}
+.title {
+    font-size: medium;
+    font-weight: 400;
+    margin-left: 4px;
+}
+.text {
+    font-size: medium;
+    font-weight: 400;
+    margin-left: 70px;
+}

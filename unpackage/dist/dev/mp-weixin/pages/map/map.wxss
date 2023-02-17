@@ -1,0 +1,22 @@
+/* pages/map/map.wxss */
+.container {
+    padding: 0;
+}
+.header {
+    width: 100%;
+    /* display: flex; */
+}
+.search{
+  width: 90%;
+}
+.content{
+	padding: 16px;
+}
+.van-card{
+	background-color: #fff;
+	font-size: 14px;
+}
+.van-notice-bar__content {
+	position: unset !important;
+}
+

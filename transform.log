@@ -1,0 +1,152 @@
+miniprogram-to-uniapp v2 转换日志
+
+工具版本：v2.0.24
+转换模式：HBuilder X
+是否合并css：否
+项目 'charge-uniapp' 开始转换...
+sourceFolder = D:\epiboly\20221025 1000\charge\charge-uniapp
+搜索到339个文件，耗时：12ms
+
+[Tip]文件(miniprogram_npm/weui-miniprogram/icon/icon.js)体积大于 204.8 kb ，跳过处理
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+不处理node_modules目录
+---- weui-miniprogram --
+[Error] requirePlugin方法仅在微信小程序里支持，请转换后手动调整代码       file: pages/map/map
+write pages.json success!
+write manifest.json success!
+write main.js success!
+
+
+统计信息：
+
+vue文件数量: 31
+支付api数量: 0
+登录api数量: 1
+
+恭喜你，转换完成！
+用时: 22.939s
+工具版本：v2.0.24
+在该小程序项目的同级目录可以看到_uni结尾的项目，即是转换好的uniapp项目，相关日志在该目录里。
+
+！！！ 当前项目引用了npm模块，请转换完后，在命令行里运行“npm install”命令安装npm模块 ！！！
+
+使用说明：
+    1.因各种原因，本工具并非100%完美转换！有问题实属正常！
+    2.如遇运行报错，请添加QQ群(780359397、361784059、603659851)带图反馈或https://github.com/zhangdaren/miniprogram-to-uniapp提交Issue！
+    3.更多信息请查阅转换后目录里的 README.md 和 transform.log
+
+
+

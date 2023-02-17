@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/myCharge/myCharge",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/charge/charge",
+    "pages/chargeForm/chargeForm",
+    "pages/orderForm/orderForm",
+    "pages/order/order",
+    "pages/circle/circle",
+    "pages/balance/balance",
+    "pages/topUp/topUp"
+  ],
+  "subPackages": [],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8ebbf5",
+    "navigationBarTitleText": "充电驿站",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.19",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {
+    "van-button": "/wxcomponents/dist/button/index",
+    "van-dropdown-menu": "/wxcomponents/dist/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/dist/dropdown-item/index",
+    "van-search": "/wxcomponents/dist/search/index",
+    "van-action-sheet": "/wxcomponents/dist/action-sheet/index",
+    "van-card": "/wxcomponents/dist/card/index",
+    "van-tag": "/wxcomponents/dist/tag/index",
+    "van-icon": "/wxcomponents/dist/icon/index",
+    "van-divider": "/wxcomponents/dist/divider/index",
+    "van-field": "/wxcomponents/dist/field/index",
+    "van-cell-group": "/wxcomponents/dist/cell-group/index",
+    "van-radio": "/wxcomponents/dist/radio/index",
+    "van-radio-group": "/wxcomponents/dist/radio-group/index",
+    "van-picker": "/wxcomponents/dist/picker/index",
+    "van-popup": "/wxcomponents/dist/popup/index",
+    "van-submit-bar": "/wxcomponents/dist/submit-bar/index",
+    "van-circle": "/wxcomponents/dist/circle/index",
+    "van-count-down": "/wxcomponents/dist/count-down/index",
+    "van-tab": "/wxcomponents/dist/tab/index",
+    "van-tabs": "/wxcomponents/dist/tabs/index",
+    "van-notice-bar": "/wxcomponents/dist/notice-bar/index"
+  }
+}

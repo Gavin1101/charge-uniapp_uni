@@ -1,0 +1,29 @@
+.circle{
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.page{
+	height: 60vh;
+	background-color: #8ebbf5;
+}
+.van-count-down{
+	font-size: 22px !important;
+	color: aliceblue !important;
+}
+.weui-btn-area{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.endCharge{
+	margin: 20px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
