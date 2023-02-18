@@ -2454,7 +2454,155 @@ module.exports = _toPrimitive, module.exports.__esModule = true, module.exports[
 
 /***/ }),
 
-/***/ 137:
+/***/ 14:
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 15);
+var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 16);
+function _construct(Parent, args, Class) {
+  if (isNativeReflectConstruct()) {
+    module.exports = _construct = Reflect.construct.bind(), module.exports.__esModule = true, module.exports["default"] = module.exports;
+  } else {
+    module.exports = _construct = function _construct(Parent, args, Class) {
+      var a = [null];
+      a.push.apply(a, args);
+      var Constructor = Function.bind.apply(Parent, a);
+      var instance = new Constructor();
+      if (Class) setPrototypeOf(instance, Class.prototype);
+      return instance;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  }
+  return _construct.apply(null, arguments);
+}
+module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 144:
+/*!**********************************************************************************************************************************************************************!*\
+  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/popup.js ***!
+  \**********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  data: function data() {
+    return {};
+  },
+  created: function created() {
+    this.popup = this.getParent();
+  },
+  methods: {
+    /**
+     * 获取父元素实例
+     */
+    getParent: function getParent() {
+      var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'uniPopup';
+      var parent = this.$parent;
+      var parentName = parent.$options.name;
+      while (parentName !== name) {
+        parent = parent.$parent;
+        if (!parent) return false;
+        parentName = parent.$options.name;
+      }
+      return parent;
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 145:
+/*!***************************************************************************************************************************************************************************!*\
+  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/index.js ***!
+  \***************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 146));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 147));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 148));
+var _default = {
+  en: _en.default,
+  'zh-Hans': _zhHans.default,
+  'zh-Hant': _zhHant.default
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 146:
+/*!**************************************************************************************************************************************************************************!*\
+  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/en.json ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: uni-popup.cancel, uni-popup.ok, uni-popup.placeholder, uni-popup.title, uni-popup.shareTitle, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-popup.cancel\":\"cancel\",\"uni-popup.ok\":\"ok\",\"uni-popup.placeholder\":\"pleace enter\",\"uni-popup.title\":\"Hint\",\"uni-popup.shareTitle\":\"Share to\"}");
+
+/***/ }),
+
+/***/ 147:
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hans.json ***!
+  \*******************************************************************************************************************************************************************************/
+/*! exports provided: uni-popup.cancel, uni-popup.ok, uni-popup.placeholder, uni-popup.title, uni-popup.shareTitle, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-popup.cancel\":\"取消\",\"uni-popup.ok\":\"确定\",\"uni-popup.placeholder\":\"请输入\",\"uni-popup.title\":\"提示\",\"uni-popup.shareTitle\":\"分享到\"}");
+
+/***/ }),
+
+/***/ 148:
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hant.json ***!
+  \*******************************************************************************************************************************************************************************/
+/*! exports provided: uni-popup.cancel, uni-popup.ok, uni-popup.placeholder, uni-popup.title, uni-popup.shareTitle, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-popup.cancel\":\"取消\",\"uni-popup.ok\":\"確定\",\"uni-popup.placeholder\":\"請輸入\",\"uni-popup.title\":\"提示\",\"uni-popup.shareTitle\":\"分享到\"}");
+
+/***/ }),
+
+/***/ 15:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _setPrototypeOf(o, p);
+}
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 156:
 /*!**********************************************************************************************************************************************************************!*\
   !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \**********************************************************************************************************************************************************************/
@@ -3476,52 +3624,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 14:
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 15);
-var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 16);
-function _construct(Parent, args, Class) {
-  if (isNativeReflectConstruct()) {
-    module.exports = _construct = Reflect.construct.bind(), module.exports.__esModule = true, module.exports["default"] = module.exports;
-  } else {
-    module.exports = _construct = function _construct(Parent, args, Class) {
-      var a = [null];
-      a.push.apply(a, args);
-      var Constructor = Function.bind.apply(Parent, a);
-      var instance = new Constructor();
-      if (Class) setPrototypeOf(instance, Class.prototype);
-      return instance;
-    }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  }
-  return _construct.apply(null, arguments);
-}
-module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 15:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _setPrototypeOf(o, p);
-}
-module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
 /***/ 16:
 /*!*************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
@@ -3544,105 +3646,7 @@ module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, mo
 
 /***/ }),
 
-/***/ 166:
-/*!**********************************************************************************************************************************************************************!*\
-  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/popup.js ***!
-  \**********************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  data: function data() {
-    return {};
-  },
-  created: function created() {
-    this.popup = this.getParent();
-  },
-  methods: {
-    /**
-     * 获取父元素实例
-     */
-    getParent: function getParent() {
-      var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'uniPopup';
-      var parent = this.$parent;
-      var parentName = parent.$options.name;
-      while (parentName !== name) {
-        parent = parent.$parent;
-        if (!parent) return false;
-        parentName = parent.$options.name;
-      }
-      return parent;
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-
-/***/ 167:
-/*!***************************************************************************************************************************************************************************!*\
-  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/index.js ***!
-  \***************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 168));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 176));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 177));
-var _default = {
-  en: _en.default,
-  'zh-Hans': _zhHans.default,
-  'zh-Hant': _zhHant.default
-};
-exports.default = _default;
-
-/***/ }),
-
-/***/ 168:
-/*!**************************************************************************************************************************************************************************!*\
-  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/en.json ***!
-  \**************************************************************************************************************************************************************************/
-/*! exports provided: uni-popup.cancel, uni-popup.ok, uni-popup.placeholder, uni-popup.title, uni-popup.shareTitle, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-popup.cancel\":\"cancel\",\"uni-popup.ok\":\"ok\",\"uni-popup.placeholder\":\"pleace enter\",\"uni-popup.title\":\"Hint\",\"uni-popup.shareTitle\":\"Share to\"}");
-
-/***/ }),
-
-/***/ 17:
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ 18);
-var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ 19);
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 7);
-var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ 20);
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-}
-module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 174:
+/***/ 164:
 /*!******************************************************************************************************************************************************************************************!*\
   !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
   \******************************************************************************************************************************************************************************************/
@@ -3776,25 +3780,21 @@ function createAnimation(option, _this) {
 
 /***/ }),
 
-/***/ 176:
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hans.json ***!
-  \*******************************************************************************************************************************************************************************/
-/*! exports provided: uni-popup.cancel, uni-popup.ok, uni-popup.placeholder, uni-popup.title, uni-popup.shareTitle, default */
-/***/ (function(module) {
+/***/ 17:
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = JSON.parse("{\"uni-popup.cancel\":\"取消\",\"uni-popup.ok\":\"确定\",\"uni-popup.placeholder\":\"请输入\",\"uni-popup.title\":\"提示\",\"uni-popup.shareTitle\":\"分享到\"}");
-
-/***/ }),
-
-/***/ 177:
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** G:/Program Files/wechat/WeChat Files/wxid_8clli836nx2822/FileStorage/File/2023-01/charge/charge-uniapp_uni/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hant.json ***!
-  \*******************************************************************************************************************************************************************************/
-/*! exports provided: uni-popup.cancel, uni-popup.ok, uni-popup.placeholder, uni-popup.title, uni-popup.shareTitle, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-popup.cancel\":\"取消\",\"uni-popup.ok\":\"確定\",\"uni-popup.placeholder\":\"請輸入\",\"uni-popup.title\":\"提示\",\"uni-popup.shareTitle\":\"分享到\"}");
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ 18);
+var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ 19);
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 7);
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ 20);
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
